@@ -18,10 +18,10 @@ The project was implemented using **PyTorch** and trained in **Google Colab**.
 The goals of this project were:
 
 - Understand the full Computer Vision pipeline
-- Apply transfer learning with a pretrained CNN
+- Apply transfer learning using a pretrained CNN
 - Train and evaluate a binary image classifier
-- Generate performance metrics (accuracy, confusion matrix, classification report)
-- Perform prediction on new images
+- Generate evaluation metrics (accuracy, confusion matrix, classification report)
+- Perform inference on new images
 
 ---
 
@@ -32,7 +32,7 @@ The goals of this project were:
 - Input Size: 224 × 224
 - Loss Function: CrossEntropyLoss
 - Optimizer: Adam (learning rate = 1e-4)
-- Training Platform: Google Colab (CPU/GPU)
+- Training Environment: Google Colab (CPU / GPU compatible)
 
 ---
 
@@ -55,22 +55,24 @@ Evaluation outputs are available in the `results/` folder:
 
 ## 🖼️ Inference on New Images
 
-The notebook allows:
+The notebook includes functionality to:
 
-- Uploading custom images
-- Running prediction
-- Displaying predicted class
-- Showing class probabilities
+- Upload custom images
+- Run prediction
+- Display predicted class
+- Show class probabilities
 
 ---
 
 ## 📂 Project Files
 
 - `cv_project_01.ipynb` — Training and evaluation notebook  
-- `resnet18_cats_dogs.pth` — Trained model weights  
 - `results/confusion_matrix.png` — Confusion matrix visualization  
 - `results/classification_report.txt` — Detailed classification metrics  
 - `README.md` — Project documentation  
+
+> Note: Trained model weights are not uploaded due to GitHub file size limits.  
+> The notebook allows full model training and reproduction of results.
 
 ---
 
@@ -78,8 +80,9 @@ The notebook allows:
 
 1. Open the notebook in Google Colab  
 2. Run all cells sequentially  
-3. Upload your own images for prediction  
+3. The dataset downloads automatically  
 4. View evaluation results in the `results/` folder  
+5. Upload your own images for prediction  
 
 ---
 
